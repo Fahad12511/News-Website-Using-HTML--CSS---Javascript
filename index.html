@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <img
+          src="logo.png"
+          alt=" Company Logo"
+          width="130px"
+          
+        />
+        <ul class="nav-ul">
+          <li><a href="index.html">Home</a></li>
+          <li id="Cricket" onclick="onNavItemClick('Cricket')">Cricket</li>
+          <li id="military" onclick="onNavItemClick('military')">Military</li>
+          <li id="Weather" onclick="onNavItemClick('Weather')">Weather</li>
+          <li id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+        </ul>
+        <div>
+          <input id="search-item" type="text" placeholder="Search News" />
+          <button id="search-btn">Search</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="maincard" id="maincard"></div>
+    </main>
+    <template id="tempcard">
+      <div class="card-container">
+        <div class="card-img">
+          <img src="https://placehold.co/400x200" alt="" id="newimage" />
+        </div>
+        <div class="card-content">
+          <h2 id="cardheader">This is header</h2>
+          <h6 id="cardheading2">this ois time</h6>
+          <p id="cardpara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            aspernatur nostrum magnam, assumenda fugit expedita molestiae quidem
+            repellat dolorum illo ullam culpa repellendus ad. Dolorem rem
+            perspiciatis consectetur odit adipisci?
+          </p>
+        </div>
+      </div>
+    </template>
+
+   
+
+  </body>
+  
+  <script src="script.js"></script>
+</html>
